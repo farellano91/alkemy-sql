@@ -13,7 +13,4 @@ SELECT *
 FROM ESTUDIANTE e
 WHERE e.legajo NOT IN (SELECT i.ESTUDIANTE_legajo
                        FROM INSCRIPCION i
-                       WHERE i.CURSO_codigo = 105)
-
-
-
+                       WHERE i.CURSO_codigo = 105);
